@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Stint+Ultra+Condensed&display=swap');
+
+/*BODY MAIN Y TITULOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ 
+}
+
+.sopas{
+  
+    /*background-image: url(../images/fondos/fondo.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+     
+   
+}
+
+.nuevas-recetas{
+    background-image: url(../images/fondos/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    opacity: 1; 
+}
+
+
+.titulo{
+    font-family: "Stint Ultra Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #c32732;
+    font-size: 100px;
+    
+}
+
+
+h2{
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:#006b49;
+    font-size: 50px;
+        -webkit-text-stroke: 2px black;  
+}
+
+.subtitulo{
+    font-weight: 600;
+    font-style: italic;
+   
+}
+
+h5{
+    color:#c49434 ;
+    text-align: center;
+   
+}
+
+
+.recetas{
+    font-family: "Agbalumo", system-ui;
+    font-style: normal;
+    color: #006b49;
+    font-size: 50px;
+}
+
+
+/*NAVBAR*/
+
+.navbar-expand-lg{
+    background-color: #fbfbd3;
+    color: #006b49;
+}
+
+.navbar-light .navbar-toggler{
+    border: 2px solid #006b49;
+    color: #006b49
+}
+
+.navbar-light{
+    color: #006b49;
+}
+
+.navbar .buscar {
+    border: 2px solid #006b49;
+    color: #006b49;
+}
+
+.navbar .form-buscar{
+    color: #006b49;
+    font-weight: 600;
+}
+
+.navbar li a{
+    color: #006b49 !important; 
+    font-weight: bold;
+}
+
+.navbar li a:hover{
+    background-color: #006b49;
+    color:  #fbfbd3 !important;
+}
+
+
+
+/* CARDS*/
+
+.card{
+overflow: hidden;
+/*height: 80vh;*/
+height: 450px;
+}
+
+.card a{
+    
+    height: 300px;
+}
+
+.card img{
+    transition: all 0.5s;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card img:hover{
+    transform: scale(1.2);
+}
+
+.card-body p{
+    color: #006b49;
+    text-align: center;
+}
+
+.container-image .card-img-top {
+    height: 70%;
+    
+}
+
+.card-img-top{
+   height: 100%;
+   
+}
+
+.card-body .bi{
+   margin-top: 10px;
+  
+}
+.card-body p .card-text{
+   margin: 20px; 
+}
+
+.card-title{
+    margin-bottom: 5px; 
+}
+
+.nuevas-recetas .card .card-title{
+    height: 50px;  
+    margin-bottom: 0;
+    text-align: center;
+   
+}
+
+.container-image .card{ 
+        overflow: hidden;
+        height: 50vh;;
+       
+}
+
+.container-image .card h5{ 
+    margin-top: 15px;
+}
+
+.card-body{
+    height: 80%;
+}
+
+.card-body .card-title{ 
+    height: 90%;   
+}
+
+/*VIDEO*/
+.video{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content:center;
+   
+}
+.image-container{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+   
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 288px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+   
+}
+
+
+.overlay h5{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50% !important;
+}
+
+@media(max-width:800px) {
+    .overlay h5{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30% !important;
+    }
+    
+}
+
+@media(max-width:333px) {
+    .overlay{
+        display: none;
+    }
+    
+}
+
+.image-container:hover .overlay{
+    opacity: 1;
+}
+
+img.circle{
+    border-radius: 50%;
+    transform: none !important;
+    transition: none !important;
+}
+
+/*FOOTER*/
+
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #006b49;
+    color: #fff;
+}
+
+footer a{
+    margin: 50px;
+    outline: none;
+    
+}
+
+footer a i{
+    font-weight: 500;
+    font-size: 40px;
+    color: #fbfbd3;
+}
+
+footer p{
+    color: #fbfbd3;
+}
+
+/*MEDIA QUERIES PARA ACHICAR LAS IMAGENES Y VIDEO*/
+@media(max-width:1000px) {
+    .card {
+        overflow: hidden;
+        height: 470px;
+    }
+
+    .titulo {
+        font-size: 90px;
+    }
+    .subtitulo {
+        
+        font-size: 18px;
+    }
+
+    .titulo-seccion {
+        font-size: 38px;
+      
+    }
+
+    .recetas{
+        margin-left: 0px !important;
+    }
+    
+}
+
+@media(max-width:800px) {
+    .nuevas-recetas .video .video-youtube{
+        width: 90%;
+        margin-left: 0;
+    }
+    .nuevas-recetas .card .card-title{
+        height: 20px;
+        
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .nuevas-recetas .card-body{
+        padding: 0;
+        height: 10px;
+       
+    }
+
+    .container-image .card-img-top{
+        height: 200px;
+        
+    }
+
+    .container-image .card {
+        overflow: hidden;
+        height: 40vh;
+    }
+    .card {
+        overflow: hidden;
+        height: 430px;
+    }
+
+    .titulo {
+        font-size: 80px;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+    }
+
+    .titulo-seccion{
+        margin-left: 0px !important;
+    }
+
+}
+
+@media(max-width:600px) {
+    .nuevas-recetas .video .video-youtube{
+        width: 70%;
+        margin-left: 0;
+}
+
+.container-image .card {
+    overflow: hidden;
+    height: 40vh;
+}
+
+.titulo {
+    
+    font-size: 80px;
+}
+
+.subtitulo {
+    font-size: 18px;
+}
+
+.titulo-seccion{
+    margin-left: 0px !important;
+}
+
+.recetas{
+    margin-left: 0px !important;
+}
+
+
+
+}

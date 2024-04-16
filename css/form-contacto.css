@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Stint+Ultra+Condensed&display=swap');
+
+/*BODY*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    /*background-color: #fbfbd3;*/
+    /*background-color: bisque;*/
+    background-color: wheat;
+    background-image: url(../images/banner4.jpg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*CONTENEDOR DEL FORMULARIO*/
+label{
+    color: white;
+}
+
+.row{
+    background-color: transparent;
+    
+    border-radius: 10px;
+    box-shadow: inset -2px -2px 15px 3px black;
+    width: auto;
+}
+.container-fluid{
+    width: 36%;
+    flex: 1;
+}
+
+.btn-enviar{
+    width: 90%;
+    margin-bottom: 50px; 
+}
+
+@media(max-width:1000px){
+    .container-fluid{
+        width: 55%;
+        flex: 1;
+        
+    }   
+}
+
+@media(max-width:800px){
+    .container-fluid{
+        width: 70%;
+        flex: 1;
+        margin-bottom: 20px;
+    } 
+
+    
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario - Fogones mexicanos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/images/fondos/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/form-contacto.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <!--EMPIEZA EL HEADER-->
+  <header class="container">
+          
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand mr-5 ml-5" href="#"><img src="./images/fondos/texto.png" style="width: 80px;" alt="imagen de logo" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acerca.html">Acerca de</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Recetas
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Aperitivos</a>
+                <a class="dropdown-item" href="#">Bebidas</a>
+                <a class="dropdown-item" href="#">Carne de res</a>
+                <a class="dropdown-item" href="#">Cerdo</a>
+                <a class="dropdown-item" href="#">Desayuno y almuerzo</a>
+                <a class="dropdown-item" href="#">Ensaladas</a>
+                <a class="dropdown-item" href="#">Frutas</a>
+                <a class="dropdown-item" href="#">Guisados</a>
+                <a class="dropdown-item" href="#">Panes y galletas</a>
+                <a class="dropdown-item" href="#">Pescados y mariscos</a>
+                <a class="dropdown-item" href="#">Pollo</a>
+                <a class="dropdown-item" href="#">Postres</a>
+                <div class="dropdown-divider"></div>
+               
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 form-buscar" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn buscar  my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+</header>
+   <!--TERMINA EL HEADER-->
+
+    <!--EMPIEZA EL CONTENEDOR DEL FORMULARIO-->
+  <div class="container-fluid">
+    <form class="mt-5 row">
+      <div class="form-group col-12 col-6 mt-3">
+        <label for="exampleInputName" > <b>Nombre</b> </label> 
+        <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" required>
+      </div>
+      <div class="form-group  col-12 mt-3">
+        <label for="exampleInputEmail1"><b>Email</b> </label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+      </div>
+      <div class="form-group col-12 mt-3">
+        <label for="exampleFormControlTextarea1"> <b>Comentario</b> </label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Dejanos tu mensaje güey" required rows="3"></textarea>
+      </div>
+      
+      <button type="submit" class="btn col-12 btn-primary btn-enviar mt-3">Enviar</button>
+    </form>
+  </div>
+   <!--TERMINA EL CONTENEDOR DEL FORMULARIO-->
+   <!--EMPIEZA EL FOOTER-->
+  <footer>
+    <div class="contenedor-footer text-center">
+     
+       <div class="sociales ">
+        <a target="_blank"    href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+        <a target="_blank" href="https://whataspp.com/"><i class="bi bi-whatsapp"></i></a>
+        <a target="_blank"  href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a target="_blank"  href="https://twitter.com/"> <i class="bi bi-twitter-x"></i></a>
+       </div>
+       <p class="copy">Grupo 7 &copy; 2024</p> 
+    </div>
+</footer>
+    <!--TERMINA EL FOOTER-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
