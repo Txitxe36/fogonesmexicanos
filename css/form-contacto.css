@@ -5,17 +5,21 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;  
+     
 }
 
 body{
     /*background-color: #fbfbd3;*/
     /*background-color: bisque;*/
-    background-color: wheat;
-    background-image: url(../images/banner4.jpg);
+    background-color: #c32731d3;
+    /*background-color: #c49434;*/
+    /*background-color: wheat;*/
+    /*background-image: url(../images/banner4.jpg);*/
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 }
 
 /*CONTENEDOR DEL FORMULARIO*/
@@ -24,11 +28,14 @@ label{
 }
 
 .row{
-    background-color: transparent;
-    
+    /*background-color: transparent;*/
+    /*background-color: #c49434;*/
+    background-color: #006b49;
+    /*background-color: #c32732;*/
     border-radius: 10px;
     box-shadow: inset -2px -2px 15px 3px black;
     width: auto;
+    
 }
 .container-fluid{
     width: 36%;
@@ -38,14 +45,30 @@ label{
 .btn-enviar{
     width: 90%;
     margin-bottom: 50px; 
+    /*background-color: #c32732 !important;*/
+    background-color: #c49434 !important;
+    /*background-color: #006b49 !important;*/
+    border: none;
+}
+.btn-enviar:hover{
+    background-color: #fbfbd3 !important;
+    color: #c32732;
+}
+
+form{
+    margin-bottom: 20px;
 }
 
 @media(max-width:1000px){
     .container-fluid{
         width: 55%;
-        flex: 1;
+        flex: 1;   
+    }  
+    form{
         
-    }   
+        margin-bottom: 50px; 
+    } 
+
 }
 
 @media(max-width:800px){
