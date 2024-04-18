@@ -116,6 +116,13 @@ overflow: hidden;
 height: 450px;
 }
 
+.card-receta{
+    overflow: hidden;
+    height: 350px;
+    
+    border-radius: 20px;
+}
+
 .card a{
     
     height: 300px;
@@ -226,6 +233,9 @@ height: 450px;
         align-items: center;
         margin-top: 30% !important;
     }
+
+   
+    
     
 }
 
@@ -297,6 +307,11 @@ footer p{
         margin-left: 0px !important;
     }
     
+    .card-receta{
+        
+        height: 350px;
+        
+    }
 }
 
 @media(max-width:800px) {
@@ -331,6 +346,12 @@ footer p{
     .card {
         overflow: hidden;
         height: 430px;
+    }
+
+    .card-receta{
+        
+        height: 350px;
+        
     }
 
     .titulo {
