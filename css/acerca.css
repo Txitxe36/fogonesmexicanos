@@ -26,6 +26,26 @@
     margin-bottom: 30px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.estilo-parrafo {
+    margin: 3em auto;
+    padding: 2em;
+    text-align: justify;
+}
+
+.divider {
+    margin: 3em auto;
+    width: 80%;
+    height: 0.2em;
+    background-color: #c32732;
+}
 
 /* HAY QUE REVISAR EL TAMAÑO DE LAS IMAGENES, EN RESPONSIVE TAMBIEN */
 .row{
